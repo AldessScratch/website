@@ -42,7 +42,7 @@ body {
   }
   .navbar {
     margin-left: 20px;
-    margin-top: calc((100vh - 250px) / 2);
+    margin-top: calc((100vh - 190px) / 2);
     top: 0;
     left: 0;
     border-radius: 50px;
@@ -52,7 +52,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 60px;
-    height: 250px;
+    height: 190px;
     justify-content: center;
     background-color: var(--navbar);
     border: 1px solid var(--lighter);
@@ -64,7 +64,6 @@ body {
     align-items: center;
     font-size: 30px;
     color: var(--text-color);
-    margin: 5px;
     padding: 10px;
     transition: ease-in-out .1s;
   }
@@ -77,57 +76,6 @@ body {
     border: 1px solid var(--lighter);
     width: 40px;
     margin-bottom: 20px;
-  }
-
-
-  .shapes{
-    position: fixed;
-    right: 30%;
-    top: 30%;
-    transform: rotate(-45deg);
-    display: flex;
-    align-items: end;
-    gap: 5rem;
-    z-index: -10;
-  }
-  .shape{
-    mix-blend-mode: multiply;
-    filter: blur(70px);
-  }
-  
-  .shapes .shape.color2{
-    height: 23rem;
-    width: 100px;
-    background-color: #69659c;
-    animation-duration: 10s;
-    animation-name: smoothopacity;
-    transition: all 0.2s ease-in-out;
-    animation-iteration-count: infinite;
-    z-index: -10;
-  }
-  
-  .shapes .shape.color1{
-    animation-duration: 15s;
-    animation-name: smoothopacity;
-    transition: all 0.2s ease-in-out;
-    animation-iteration-count: infinite;
-    background-color: #3c5cb3;
-    height: 17rem;
-    width: 80px;
-    z-index: -10;
-  }
-
-  @keyframes smoothopacity {
-    from {
-        opacity: 0;
-    }
-    50%{
-      opacity: 1;
-      
-    }
-    to {
-      opacity: 0;
-  }
   }
 
 .home {
