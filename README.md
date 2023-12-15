@@ -2,5 +2,5 @@
 
 https://aldess.pages.dev/ :D
 
-Animations: AOS
-Image viewer: Viewer.js
+- Animations: AOS
+- Image viewer: Viewer.js
