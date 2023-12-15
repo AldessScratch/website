@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AldessSc</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <meta name="description" content="Hello :D It's me AldessSc">
+    <meta property="og:image" content="/img/logo.png">
+    <meta content="#ffffff" data-react-helmet="true" name="theme-color">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.css">
+</head> 
+<body>
+    <div class="navbar">
+        <img src="img/logo.png" alt="aldesslogo" onclick="location.href = './'">
+        <div onclick="location.href = 'tim.html'" class="navelem icon">
+            <i class="bx bx-grid-alt"></i>
+        </div>
+        <div onclick="location.href = 'info.html'" class="navelem icon">
+            <i class="bx bx-info-circle"></i>
+        </div>
+        <br>
+        <div onclick="window.open('https://github.com/AldessScratch')" class="navelem">
+            <i class="bx bxl-github"></i>
+        </div>
+        <div onclick="window.open('https://discord.com/users/1001220536619249665')" class="navelem">
+            <i class="bx bxl-discord-alt"></i>
+        </div>
+    </div>
+    <div class="home">
+        <h2 data-aos="zoom-in">Things I made</h2>
+        <div class="cards" id="cards">
+            <div class="card">
+                <div class="imgcontainer">
+                  <img data-original="img/aetherium.png" src="img/aetherium.png">
+                  <img style="display: none;" data-original="img/aetherium2.png" src="img/aetherium2.png">
+                </div>
+                <div class="cardtext">Aetherium Client website <i onclick="window.open('https://aetherium-development.github.io/')" class="bx bx-link-external small"></i> <i onclick="window.open('https://github.com/Aetherium-Development/Aetherium-Development.github.io')" class="bx bxl-github"></i></div>
+                <div class="carddesc">Cleanest website I've ever made (so far)</div>
+              </div>
+              <div class="card">
+                <div class="imgcontainer">
+                  <img data-original="img/snowybg.png" src="img/snowybg.png">
+                </div>
+                <div class="cardtext">Snowybg <i onclick="window.open('https://github.com/AldessScratch/snowy-bg')" class="bx bxl-github"></i></div>
+                <div class="carddesc">Rainmeter style website so we can have a nice background on the classroom computer. Unfortunately, it didn't last long cuz the math teacher removed it :(</div>
+              </div>
+              <div class="card">
+                <div class="imgcontainer">
+                  <img data-original="img/flace.png" src="img/flace.png">
+                  <img style="display: none;" data-original="img/flace2.png" src="img/flace2.png">
+                  <img style="display: none;" data-original="img/flace3.png" src="img/flace3.png">
+                  <img style="display: none;" data-original="img/flace4.png" src="img/flace4.png">
+                </div>
+                <div class="cardtext">Fla?e</div>
+                <div class="carddesc">A website I made with friends to learn school stuff easier with flashcards</div>
+              </div>
+              <div class="card">
+                <div class="imgcontainer">
+                  <img data-original="img/unisteria.png" src="img/unisteria.png">
+                </div>
+                <div class="cardtext">Unisteria website <i onclick="window.open('https://unisteria.netlify.app/')" class="bx bx-link-external small"></i> <i onclick="window.open('https://github.com/AldessScratch/Unisteria-Website')" class="bx bxl-github"></i></div>
+                <div class="carddesc">A website I made for a hack client. Looks cool with the blurred background.</div>
+              </div>
+              <div class="card">
+                <div class="imgcontainer">
+                  <img data-original="img/soar.png" src="img/soar.png">
+                  <img style="display: none;" data-original="img/soar2.png" src="img/soar2.png">
+                </div>
+                <div class="cardtext">Soar Client website redesign <i onclick="window.open('https://soarclient.netlify.app/')" class="bx bx-link-external small"></i> <i onclick="window.open('https://github.com/AldessScratch/Soar-Client-Website')" class="bx bxl-github"></i></div>
+                <div class="carddesc">I made a redesign of Soar Client website but it's not really a redesign ig</div>
+              </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+          var galley = document.getElementById('cards');
+          var viewer = new Viewer(galley, {
+            url: 'data-original',
+            title: function (image) {
+              return image.alt + ' (' + (this.index + 1) + '/' + this.length + ')';
+            },
+          });
+        });
+        AOS.init();
+      </script>
+</body>
+</html>

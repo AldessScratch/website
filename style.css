@@ -8,6 +8,9 @@
     text-decoration: none;
     scroll-behavior: smooth;
 }
+img {
+  border-radius: 20px;
+}
 @font-face {
   font-family: Anurati;
   font-weight: bold;
@@ -42,7 +45,7 @@ body {
   }
   .navbar {
     margin-left: 20px;
-    margin-top: calc((100vh - 190px) / 2);
+    margin-top: calc((100vh - 270px) / 2);
     top: 0;
     left: 0;
     border-radius: 50px;
@@ -52,7 +55,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 60px;
-    height: 180px;
+    height: 270px;
     justify-content: center;
     background-color: var(--navbar);
     border: 1px solid var(--lighter);
@@ -66,10 +69,19 @@ body {
     color: #ffffff;
     background-color: #2b2b2b;
     border-radius: 50px;
-    padding: 5px;
+    height: 35px;
+    width: 35px;
     margin: 5px;
     transition: ease-in-out .1s;
     filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
+  }
+  .navelem.icon {
+    color: var(--text-color);
+    background-color: transparent;
+    filter: unset;
+  }
+  .navelem i {
+    margin-top: 1px;
   }
   .navelem:hover {
     background-color: var(--lighter);
@@ -78,19 +90,25 @@ body {
     border-radius: 50px;
     border: 1px solid var(--lighter);
     width: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
   }
 
 .home {
     width: calc(100% - 90px);
     margin-left: 90px;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
+.home h2 {
+  margin-top: 40px;
+  text-align: center;
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 35px;
+}
 .home h1{
   letter-spacing: 15px;
   font-family: 'Anurati';
@@ -105,36 +123,41 @@ body {
     font-size: 20px;
     filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.741));
 }
+.header p {
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.741));
+}
 .home p{
+  max-width: 80%;
   text-align: center;
   margin-top: 20px;
     font-weight: 400;
-    font-size: 15px;
-    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.741));
+    font-size: 20px;
+    
 }
 @media screen and (max-width: 600px) {
   .navbar{
     margin-left: 0;
     margin-bottom: 20px;
     bottom: 0;
-    width: 190px;
+    width: 270px;
     height: 60px;
     flex-direction: row;
     top: unset;
-    margin-left: calc((100vw - 190px) / 2);
+    margin-left: calc((100vw - 270px) / 2);
   }
   .navbar img {
     border-radius: 50px;
     border: 1px solid var(--lighter);
     width: 40px;
-    margin-right: 20px;
+    margin-right: 10px;
     margin-bottom: 0;
     margin-top: 0;
   }
   .home {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     margin-left: 0;
+    margin-bottom: 50px;
   }
   .home h1{
     letter-spacing: 10px;
@@ -148,7 +171,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 500px;
+  height: 85vh;
   width: 90%;
   border: 1px solid var(--lighter);
   border-radius: 40px;
@@ -159,3 +182,56 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.cards {
+  display: flex;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cards .card {
+cursor: pointer;
+transition: 0.5s;
+display: flex;
+flex-direction: column;
+border-radius: 20px;
+width: 350px;
+margin: 10px;
+height: 400px;
+background-color: var(--navbar);
+border: 1px solid var(--lighter);
+}
+.imgcontainer {
+  display: flex;
+  justify-content: center;
+margin: 10px;
+border-radius: 18px;
+border: 1px solid var(--lighter);
+overflow: hidden;
+width: calc(100% - 20px);
+height: 220px;
+}
+.imgcontainer img {
+cursor: pointer;
+height: 100%;
+width: auto;
+}
+.imgcontainer.center {
+display: flex;
+justify-content: center;
+}
+.cardtext {
+color: var(--text-color);
+font-weight: 600;
+font-size: 18px;
+margin: 5px 20px;
+}
+.carddesc {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 14px;
+  margin: 5px 20px;
+  }

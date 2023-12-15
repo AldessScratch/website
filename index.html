@@ -15,12 +15,19 @@
 </head> 
 <body>
     <div class="navbar">
-        <img src="img/logo.png" alt="aldesslogo">
-        <div class="navelem">
-            <i onclick="window.open('https://github.com/AldessScratch')" class="bx bxl-github"></i>
+        <img src="img/logo.png" alt="aldesslogo" onclick="location.href = './'">
+        <div onclick="location.href = 'tim.html'" class="navelem icon">
+            <i class="bx bx-grid-alt"></i>
         </div>
-        <div class="navelem">
-            <i onclick="window.open('https://discord.com/users/1001220536619249665')" class="bx bxl-discord-alt"></i>
+        <div onclick="location.href = 'info.html'" class="navelem icon">
+            <i class="bx bx-info-circle"></i>
+        </div>
+        <br>
+        <div onclick="window.open('https://github.com/AldessScratch')" class="navelem">
+            <i class="bx bxl-github"></i>
+        </div>
+        <div onclick="window.open('https://discord.com/users/1001220536619249665')" class="navelem">
+            <i class="bx bxl-discord-alt"></i>
         </div>
     </div>
     <div class="home">
@@ -29,7 +36,6 @@
             <h5 data-aos="zoom-in">@aldesssc</h5>
             <p>he/him</p>
         </div>
-        
     </div>
     <script>
         AOS.init();
