@@ -235,3 +235,7 @@ margin: 5px 20px;
   font-size: 14px;
   margin: 5px 20px;
   }
+.skillicons {
+  margin-top: 50px;
+  border-radius: unset;
+}
