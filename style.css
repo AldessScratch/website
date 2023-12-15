@@ -127,6 +127,7 @@ body {
   filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.741));
 }
 .home p{
+  color: var(--text-color);
   max-width: 80%;
   text-align: center;
   margin-top: 20px;
@@ -239,3 +240,5 @@ margin: 5px 20px;
   margin-top: 50px;
   border-radius: unset;
 }
+
+
