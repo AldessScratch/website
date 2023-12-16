@@ -37,9 +37,105 @@
             <h1 data-aos="fade-right">ALDESS</h1>
             <h5 data-aos="zoom-in">@aldesssc</h5>
             <p class="w">he/him</p>
-            <img onclick="window.open('https://discord.com/users/1001220536619249665')" class="lanyard" src="https://lanyard.cnrad.dev/api/1001220536619249665?showDisplayName=true">
         </div>
+        
+        <div class="widgets">
+            <div class="widget" id="timebg">
+                <div id="time" class="bigwidgettext"></div>
+            </div>
+            <div class="widget" id="gradientDiv">
+                <div id="daysRemaining" class="bigwidgettext"></div>
+                <p>until birthday</p>
+            </div>
+            <img onclick="window.open('https://discord.com/users/1001220536619249665')" class="lanyard" src="https://lanyard.cnrad.dev/api/1001220536619249665?showDisplayName=true">
+        </div> 
     </div>
+    <script>
+        function generateRandomGradient() {
+  const gradientDiv = document.getElementById('gradientDiv');
+  
+  // Generate random colors
+  const color1 = getRandomColor();
+  const color2 = getRandomColor();
+
+  // Set the background gradient
+  gradientDiv.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
+}
+
+// Function to generate a random color
+function getRandomColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+// Generate random gradient when the page loads
+generateRandomGradient();
+
+    </script>
+    <script>
+        const timebg = document.getElementById('timebg');
+        const date = new Date();
+        const hour = date.getHours();
+
+        if (hour >= 6 && hour < 8) {
+            timebg.style.backgroundImage = 'url("./img/bg/rff.jpg")';
+} else if (hour >= 18 && hour < 20) {
+    timebg.style.backgroundImage = 'url("./img/bg/orange.jpg")';
+} else if (hour >= 7 && hour < 18) {
+    timebg.style.backgroundImage = 'url("./img/bg/vert.jpg")';
+} else {
+    timebg.style.backgroundImage = 'url("./img/bg/dark.jpg")';
+}
+    </script>
+    <script>
+        // Set your birthday (month is 0-indexed, so January is 0)
+const birthdayMonth = 0; // January (0 - 11)
+const birthdayDay = 25; // 1st day of the month
+
+function updateDaysRemaining() {
+  const today = new Date();
+  const currentYear = today.getFullYear();
+
+  let nextBirthday = new Date(currentYear, birthdayMonth, birthdayDay);
+
+  // Check if the birthday has passed this year, if yes, set it to next year
+  if (today > nextBirthday) {
+    nextBirthday = new Date(currentYear + 1, birthdayMonth, birthdayDay);
+  }
+
+  const difference = nextBirthday - today;
+  const daysRemaining = Math.ceil(difference / (1000 * 60 * 60 * 24));
+
+  document.getElementById('daysRemaining').textContent = `${daysRemaining} days`;
+}
+
+// Call the function to display days remaining
+updateDaysRemaining();
+
+    </script>
+      <script>
+        function displayDateTime() {
+          const currentDate = new Date();
+          
+        
+          let hours = currentDate.getHours();
+          let minutes = currentDate.getMinutes();
+        
+          // Add leading zeros if needed
+          hours = (hours < 10 ? '0' : '') + hours;
+          minutes = (minutes < 10 ? '0' : '') + minutes;
+        
+          document.getElementById('time').innerHTML = `${hours}:${minutes}`;
+        }
+
+        setInterval(displayDateTime, 1000);
+        displayDateTime();
+        
+            </script>
     <script>
         AOS.init();
     </script>
