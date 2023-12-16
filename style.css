@@ -290,9 +290,11 @@ margin: 5px 20px;
   color: #fff;
   font-size: 30px;
   font-weight: 600;
+  filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
 }
 .widget p {
   color: #fff;
+  filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
 }
 .widgets {
   height: 200px;
