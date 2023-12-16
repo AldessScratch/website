@@ -43,39 +43,13 @@
             <div class="widget" id="timebg">
                 <div id="time" class="bigwidgettext"></div>
             </div>
-            <div class="widget" id="gradientDiv">
+            <div class="widget" style="background-color: #008cff;">
                 <div id="daysRemaining" class="bigwidgettext"></div>
                 <p>until birthday</p>
             </div>
             <img onclick="window.open('https://discord.com/users/1001220536619249665')" class="lanyard" src="https://lanyard.cnrad.dev/api/1001220536619249665?showDisplayName=true">
         </div> 
     </div>
-    <script>
-        function generateRandomGradient() {
-  const gradientDiv = document.getElementById('gradientDiv');
-  
-  // Generate random colors
-  const color1 = getRandomColor();
-  const color2 = getRandomColor();
-
-  // Set the background gradient
-  gradientDiv.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
-}
-
-// Function to generate a random color
-function getRandomColor() {
-  const letters = '0123456789ABCDEF';
-  let color = '#';
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-}
-
-// Generate random gradient when the page loads
-generateRandomGradient();
-
-    </script>
     <script>
         const timebg = document.getElementById('timebg');
         const date = new Date();
