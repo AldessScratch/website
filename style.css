@@ -119,6 +119,7 @@ body {
     filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.741));
 }
 .home h5{
+  margin-top: 20px;
   text-align: center;
     font-weight: 400;
     font-size: 20px;
@@ -186,6 +187,7 @@ body {
 }
 
 .home .header {
+  border: 1px solid var(--lighter);
   margin-top: 20px;
   overflow: hidden;
   display: flex;
@@ -261,6 +263,7 @@ margin: 5px 20px;
   border-radius: unset;
 }
 .lanyard {
+  border: 1px solid var(--lighter);
   margin-top: 10px;
   width: auto;
   height: 200px;
