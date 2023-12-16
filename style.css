@@ -87,6 +87,7 @@ body {
     background-color: var(--lighter);
   }
   .navbar img {
+    cursor: pointer;
     border-radius: 50px;
     border: 1px solid var(--lighter);
     width: 40px;
