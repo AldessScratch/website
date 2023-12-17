@@ -186,7 +186,7 @@ body {
     border-radius: 20px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 998px) {
   img.lanyard {
     margin-right: 0;
   }
