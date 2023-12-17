@@ -20,11 +20,11 @@ img {
     width: 8px;
   }
   ::-webkit-scrollbar-thumb {
-    background: var(--text-color);
+    background: var(--lighter);
     border-radius: 4px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--lighter);
+    background: var(--text-color);
   }
 body {
   background-color: var(--bg);
@@ -95,9 +95,9 @@ body {
   }
 
 .home {
+  min-height: 100vh;
     width: calc(100% - 90px);
     margin-left: 90px;
-    min-height: 100vh;
     display: flex;
   justify-content: center;
   align-items: center;
@@ -164,7 +164,7 @@ body {
   }
   .home {
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     margin-left: 0;
   }
   .home h1{
@@ -188,7 +188,6 @@ body {
 
 .home .header {
   border: 1px solid var(--lighter);
-  margin-top: 20px;
   overflow: hidden;
   display: flex;
   justify-content: center;
