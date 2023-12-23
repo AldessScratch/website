@@ -187,6 +187,9 @@ body {
     height: 200px;
     border-radius: 20px;
   }
+  .header {
+    margin-top: 50px;
+  }
 }
 @media screen and (max-width: 975px) {
   .widget.right{
@@ -292,12 +295,14 @@ margin: 5px 20px;
   flex-direction: column;
 }
 .bigwidgettext{
+  text-align: center;
   color: #fff;
   font-size: 30px;
   font-weight: 600;
   filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
 }
 .widget p {
+  text-align: center;
   color: #fff;
   filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
 }
