@@ -9,7 +9,7 @@
     scroll-behavior: smooth;
 }
 img {
-  border-radius: 20px;
+  border-radius: 10px;
 }
 @font-face {
   font-family: Anurati;
@@ -232,7 +232,7 @@ flex-direction: column;
 border-radius: 20px;
 width: 350px;
 margin: 10px;
-height: 400px;
+height: 350px;
 background-color: var(--navbar);
 border: 1px solid var(--lighter);
 }
@@ -240,16 +240,16 @@ border: 1px solid var(--lighter);
   display: flex;
   justify-content: center;
 margin: 10px;
-border-radius: 18px;
+border-radius: 15px;
 border: 1px solid var(--lighter);
 overflow: hidden;
 width: calc(100% - 20px);
-height: 220px;
+height: auto;
 }
 .imgcontainer img {
 cursor: pointer;
-height: 100%;
-width: auto;
+width: 100%;
+height: auto;
 }
 .imgcontainer.center {
 display: flex;
